@@ -1,0 +1,28 @@
+#elctricity bill
+name=input('enter name:')
+units=int(input('enter no.of units consumed:'))
+if units<=30:
+    payamount=units*1.95
+    fixedcharges=25
+elif units<=75:
+    payamount=(30*1.95)+(units-30)*3
+    fixedcharge=30
+elif units<=125:
+    payamount=(30*1.95)+(75*3)+(units-75)*4.50
+    fixedcharge=45
+elif units<=225:
+    payamount=(30*1.95)+(75*3)+(125*4.50)+(units-125)*6
+    fixedcharge=50
+elif units<=400:
+    payamount=(30*1.95)+(75*3)+(125*4.50)+(units-225)*8.75
+    fixedcharge=55
+else:
+    payamount=(30*1.95)+(75*3)+(125*4.50)+(225*8.75)+(units-400)*9.75
+    fixedcharge=55
+print('name:',name)
+print('number of units consumed:', units)
+print('amount:',payamount)
+print('fixed charge:',fixedcharge)
+bill=payamount+fixedcharge
+print('total bill:',bill)
+
