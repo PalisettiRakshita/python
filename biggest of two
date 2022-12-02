@@ -1,0 +1,32 @@
+#way 1
+def bigno(a,b):
+    if a>b:
+        print('a is big')
+    else:
+        print('b is big')
+a=int(input())
+b=int(input())
+bigno(a,b)
+
+#way 2
+def bigno(a,b):
+    if a>b:
+        return 'a is big'
+    else:
+        return 'b is big'
+a=int(input())
+b=int(input())
+print(bigno(a,b))
+
+#way 3
+def bigno(a,b):
+    if a>b:
+        return True
+    else:
+        return False
+a=int(input())
+b=int(input())
+if(bigno(a,b)):
+    print('a is big')
+else:
+    print('b is big')
