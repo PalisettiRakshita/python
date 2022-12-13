@@ -1,0 +1,7 @@
+ap=[]
+n=int(input('enter no.of districts:'))
+for i in range(n):
+    x=input()
+    ap.append(x)
+    ap.sort()
+print(ap)
