@@ -1,0 +1,13 @@
+#printing even or odd
+n=int(input())
+l=list(map(int,input().split()))
+o=[]
+e=[]
+for i in range(0,n):
+    if l[i]%2==0:
+        e.append(l[i])
+    else:
+        o.append(l[i])
+l=o+e
+for i in range(0,n):
+    print(l[i],end=' ')
