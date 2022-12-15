@@ -1,0 +1,13 @@
+#printing negative and positives
+n=int(input())
+L=list(map(int,input().split()))
+P=[]
+N=[]2
+for i in range(0,n):
+    if L[i]>0:
+        P.append(L[i])
+    else:
+        N.append(L[i])
+L=P+N
+for i in range(0,n):
+    print(L[i],end=' ')
