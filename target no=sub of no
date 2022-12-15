@@ -1,0 +1,13 @@
+#checking subtraction of two no is target no
+n=int(input())
+l=list(map(int,input().split()))
+k=int(input())
+check=0
+for i in range(0,n):
+    for j in range(i+1,n):
+        if l[i]-l[j]==k:
+            check=check+1
+if check==1:
+    print('yes')
+else:
+    print('no')
