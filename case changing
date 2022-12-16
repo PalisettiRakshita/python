@@ -1,0 +1,10 @@
+#to convert upper-lower,lower-upper,both 
+str1=input('enter any string')
+l=len(str1)
+print(l)
+str2=input('enter a string in lower case')
+print(str2.upper())
+str3=input('enter a string in upper case')
+print(str3.lower())
+str4=input('enter a string')
+print(str4.swapcase())
