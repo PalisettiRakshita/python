@@ -1,0 +1,8 @@
+#to print number of characters in a given string
+str=input('enter a string')
+l=len(str)
+check=0
+for i in range(0,l):
+    if str[i].isalpha()==1:
+        check=check+1
+print(check)
