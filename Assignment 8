@@ -1,0 +1,5 @@
+first = int(input())
+last = int(input())
+for i in range(first,last):
+   if (i%4==0) and (i%100!=0) or (i%400==0):
+    print("The leap years are:",i)
