@@ -1,0 +1,13 @@
+n=int(input())
+l=list(map(int,input().split())) 
+m=[]
+c=0
+for i in l:
+    if i not in m:
+      m.append(i)
+    else:
+      c=c+1
+if c>0:
+    print('Duplicate') 
+else:
+    print('Unique') 
