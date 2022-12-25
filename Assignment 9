@@ -1,0 +1,8 @@
+def fibonacci(Number):
+    if(Number == 0):
+        return 0
+    elif Number == 1:
+        return 1
+    else:
+        return fibonacci(Number - 2) + fibonacci(Number - 1)
+    
