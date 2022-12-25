@@ -1,0 +1,8 @@
+#sequential order
+elements=[]
+n=int(input('Enter no.of elements:'))
+for i in range(n):
+    x=input()
+    elements.append(x)
+    elements.sort()
+print(elements)
