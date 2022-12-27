@@ -1,0 +1,21 @@
+n=int(input())
+l=list(map(int,input().split()))
+x=int(input())
+flag=0
+low=0
+high=n-1
+mid=(low+high)//2
+while high>=low:
+    if x>l[mid]:
+        low=mid+1
+        mid=(low+high)//2
+        flag=1
+    elif x==l[mid]:
+        print('element found at',l.index(mid))
+        break
+    else:
+        high=mid-1
+        mid=(low+high)//2
+    if flag==0:
+        print('element not found')
+    
