@@ -1,0 +1,11 @@
+n=int(input())
+l=list(map(int,input().split()))
+x=int(input())
+for i in range(0,n):
+    
+    if l[i]==x:
+        check=0
+        print('element found at ',i,'index')
+        check=1
+if check==0:
+    print('element not found')
