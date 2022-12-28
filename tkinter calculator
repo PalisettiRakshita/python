@@ -1,0 +1,32 @@
+from tkinter import *
+def addnumbers():
+    a=int(e1.get())+int(e2.get())
+    s.set(a)
+def subtract():
+    a=int(e1.get())-int(e2.get())
+    s.set(a)
+def multiply():
+    a=int(e1.get())*int(e2.get())
+    s.set(a)
+def division():
+    a=int(e1.get())/int(e2.get())
+    s.set(a)
+cal=Tk()
+s=StringVar()
+Label(cal,text='enter first number').grid(row=0,column=0)
+Label(cal,text='enter second number').grid(row=1,column=0)
+Label(cal,text='Result').grid(row=3,column=0)
+result=Label(cal,text='add',textvariable=s).grid(row=3,column=1)
+e1=Entry(cal)
+e2=Entry(cal)
+e1.grid(row=0,column=1)
+e2.grid(row=1,column=1)
+b=Button(cal,text='addition',command=addnumbers)
+c=Button(cal,text='subtraction',command=subtract)
+d=Button(cal,text='multiplication',command=multiply)
+e=Button(cal,text='division',command=division)
+b.grid(row=7)
+c.grid(row=8)
+d.grid(row=9)
+e.grid(row=10)
+mainloop()
