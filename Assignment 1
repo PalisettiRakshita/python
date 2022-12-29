@@ -1,0 +1,9 @@
+n,r=map(int,input().split())
+arr=list(map(int,input().split()))
+for i in range(0,r):
+   for j in range(0,n-1):
+    temp=arr[j]
+    arr[j]=arr[j+1]
+    arr[j+1]=temp
+for i in range(n):
+    print(arr[i],end=' ') 
