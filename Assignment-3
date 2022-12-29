@@ -1,0 +1,7 @@
+n=int(input())
+l=list(map(int,input().split()))
+even= 0
+for n in l:
+    if n % 2 == 0:
+        even =even+1
+print("Even numbers in the list: ", even)
