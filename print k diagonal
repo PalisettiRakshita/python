@@ -1,0 +1,20 @@
+n=int(input())
+m=[]
+res=[]
+k=int(input())
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(0,n):
+    for j in range(0,n):
+        if i+j==n-1:
+            x=k
+            res.append(x)
+        else:
+            x=0
+            res.append(x)
+for i in res:
+    print(i,end=' ')
