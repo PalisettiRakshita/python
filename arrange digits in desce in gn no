@@ -1,0 +1,9 @@
+s=input()
+r=''
+l=[]
+for i in s:
+    l.append(i)
+l.sort()
+for i in reversed(l):
+    r=r+str(i)
+print(r)
