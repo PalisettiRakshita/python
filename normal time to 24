@@ -1,0 +1,11 @@
+def converttime(s):
+    h=int(s[0:2])
+    if h==0 and h==12:
+        return'12'+s[2:8]
+    elif h<12 :
+        return s[0:8]
+    else:
+        h=h-12
+        return '0'+str(h)+s[2:8]
+s=input()
+print(converttime(s))
