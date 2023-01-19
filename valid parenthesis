@@ -1,0 +1,21 @@
+def valid(s):
+    while(True):
+        if '[]' in s:
+            s.replace('[]','')
+        elif '()' in s:
+            s.replace('()','')
+        elif '{}' in s:
+            s.replace('{}','')
+        else:
+            return s
+    return s
+            
+n=int(input())
+for i in range(0,n):
+    s=input()
+
+res=valid(s)
+if len(s)==0:
+    print('YES')
+else:
+    print('NO')
