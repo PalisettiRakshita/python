@@ -1,0 +1,9 @@
+#to remove vowels
+s=input()
+vowels=['a','e','i','o','u','A','E','I','O','U']
+r=''
+for i in s:
+    if i not in vowels:
+        r=r+i
+print(r)
+    
