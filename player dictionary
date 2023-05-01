@@ -1,0 +1,14 @@
+player={}
+n=int(input('enter no.of players:'))
+for i in range(1,n+1):
+    l=[]
+    pno=int(input('enter player no:'))
+    pname=input('enter player name:')
+    score=int(input('enter score:'))
+    l.append(pname)
+    l.append(score)
+    player[pno]=l
+print(player)
+pno=int(input('enter player number for details:'))
+print('player name:',player[pno][0])
+print('player score:',player[pno][1])
