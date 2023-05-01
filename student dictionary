@@ -1,0 +1,6 @@
+std={1:['raju','mscs','aditya clg','kkd',9683939479],2:['satya','mecs','aditya clg','rajamendry',9763726372]}
+x=int(input('enter student no:'))
+print('sname:',std[x][0])
+print('group:',std[x][1])
+print('college:',std[x][2])
+print('phone no.',std[x][3])
