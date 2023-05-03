@@ -1,0 +1,12 @@
+#student result
+d={}
+n=int(input())
+for i in range(1,n+1):
+    name,status=input().split()
+    d[name]=status
+for i in range(1,n+1):
+    name=input()
+    if name in d:
+        print(name,d[name],'the exam')
+    else:
+        print('no result found')
