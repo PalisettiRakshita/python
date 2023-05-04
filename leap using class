@@ -1,0 +1,14 @@
+#leap year or not
+class solution:
+    def isleap(self,n):
+        if ((n%4==0) and (n%100!=0)) or (n%400==0):
+            return True
+        else:
+            return False
+n=int(input())
+s=solution()
+s.isleap(n)
+if s.isleap(n):
+    print(n,'is a leap year')
+else:
+    print(n,'is not a leap year')
