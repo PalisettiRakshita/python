@@ -1,0 +1,25 @@
+class Solution:
+
+    def subarraysDivByK(self, nums, k):
+
+        c=0
+
+        d={}
+
+        for i in accumulate(nums):
+
+            if i%k==0:
+
+                c=c+1
+
+            if i%k not in d:
+
+                d[i%k]=1
+
+            else:
+
+                c=c+d[i%k]
+
+                d[i%k]+=1
+
+        return c
