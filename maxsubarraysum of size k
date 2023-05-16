@@ -1,0 +1,18 @@
+class Solution:
+    def findPairs(self, l: List[int], k: int) -> int:
+        n=len(l)
+        i=0
+        j=1
+        l.sort()
+        r=set()
+        while(j<n):
+            if l[j]-l[i]==k:
+                r.add((l[i],l[j]))
+                i=i+1
+                j=j+1
+            elif l[j]-l[i]>k:
+                i=i+1
+                j=j+1
+            else:
+                j=j+1
+        return(len(r))
