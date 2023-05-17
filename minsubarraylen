@@ -1,0 +1,18 @@
+class Solution:
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        s=0
+        e=0
+        c=0
+        minlength=1000000
+        n=len(nums)
+        while e<n:
+            c=c+nums[e]
+            e=e+1
+            while s<e and c>=target:
+                c=c-nums[s]
+                s=s+1
+                minlength=min(minlength,e-s+1)
+        if minlength==1000000:
+            return 0
+        else:
+            return minlength
