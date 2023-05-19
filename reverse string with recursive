@@ -1,0 +1,8 @@
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        def myrev(l,r,m):
+            if l>=r:
+                return
+            s[l],s[r]=s[r],s[l]
+            myrev(l+1,r-1,s)
+        myrev(l=0,r=len(s)-1,m=s)
