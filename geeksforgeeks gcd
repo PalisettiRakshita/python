@@ -1,0 +1,8 @@
+class Solution:
+    def gcd(self, A, B):
+        while A!= 0:
+            temp=A
+            A=B%A
+            B=temp
+        return B
+  
