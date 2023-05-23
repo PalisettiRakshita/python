@@ -1,0 +1,9 @@
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        res=0
+        for i in range(0,31):
+            if (n&1==1):
+                res=res+1
+            n=n>>1#it move bits towards right side
+            res=res<<1#it moves bits towards left side
+        return res+(n&1)
