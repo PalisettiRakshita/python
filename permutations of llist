@@ -1,0 +1,12 @@
+from itertools import permutations
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        p=permutations(nums)
+        m=[''.join(int,list(i)) for i in p]
+        l=[]
+        for i in m:
+            if i not in l:
+                l.append(i)
+        return sorted(l)
+        
+f
