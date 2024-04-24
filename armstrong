@@ -3,7 +3,7 @@ sum=0
 temp=n
 while (temp>0):
    digit=temp%10
-   sum+=digit**10
+   sum+=digit**3
    n=n//10
   if(n==sum):
     print('it is an armstrong number')
